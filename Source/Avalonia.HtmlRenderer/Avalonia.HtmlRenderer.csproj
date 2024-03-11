@@ -4,6 +4,7 @@
     <NoWarn>CS0436</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
+    <PackageId>CarinaStudio.Avalonia.HtmlRenderer</PackageId>
     <Version>11.0.0</Version>
     <Authors>Avalonia Team</Authors>
     <Copyright>Copyright 2013-$([System.DateTime]::Now.ToString(`yyyy`)) &#169; The AvaloniaUI Project</Copyright>
