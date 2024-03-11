@@ -20,6 +20,7 @@ using Avalonia.Media;
 using Avalonia.Media.Immutable;
 using Avalonia.Metadata;
 using Avalonia.Threading;
+using TheArtOfDev.HtmlRenderer.Adapters.Entities;
 using TheArtOfDev.HtmlRenderer.Core;
 using TheArtOfDev.HtmlRenderer.Core.Entities;
 using Point = Avalonia.Point;
@@ -312,6 +313,32 @@ namespace TheArtOfDev.HtmlRenderer.Avalonia
         public virtual string SelectedText
         {
             get { return _htmlContainer.SelectedText; }
+        }
+        
+        /// <summary>
+        /// the text fore color use for selected text
+        /// </summary>
+        public Color SelectionForeColor
+        {
+            get
+            {
+                var rColor = _htmlContainer.SelectionForeColor;
+                return Color.FromArgb(rColor.A, rColor.R, rColor.G, rColor.B);
+            }
+            set { _htmlContainer.SelectionForeColor = RColor.FromArgb(value.A, value.R, value.G, value.B); }
+        }
+
+        /// <summary>
+        /// the back-color to use for selected text
+        /// </summary>
+        public Color SelectionBackColor
+        {
+            get
+            {
+                var rColor = _htmlContainer.SelectionBackColor;
+                return Color.FromArgb(rColor.A, rColor.R, rColor.G, rColor.B);
+            }
+            set { _htmlContainer.SelectionBackColor = RColor.FromArgb(value.A, value.R, value.G, value.B); }
         }
 
         /// <summary>

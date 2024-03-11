@@ -114,12 +114,12 @@ namespace TheArtOfDev.HtmlRenderer.Core
         /// <summary>
         /// the text fore color use for selected text
         /// </summary>
-        private RColor _selectionForeColor;
+        private RColor _selectionForeColor = RColor.Empty;
 
         /// <summary>
         /// the back-color to use for selected text
         /// </summary>
-        private RColor _selectionBackColor;
+        private RColor _selectionBackColor = RColor.Empty;
 
         /// <summary>
         /// the parsed stylesheet data used for handling the html

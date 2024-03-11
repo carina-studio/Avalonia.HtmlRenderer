@@ -193,9 +193,6 @@ namespace TheArtOfDev.HtmlRenderer.Core.Parse
         /// <param name="cssData">the style data</param>
         private void SetTextSelectionStyle(HtmlContainerInt htmlContainer, CssData cssData)
         {
-            htmlContainer.SelectionForeColor = RColor.Empty;
-            htmlContainer.SelectionBackColor = RColor.Empty;
-
             if (cssData.ContainsCssBlock("::selection"))
             {
                 var blocks = cssData.GetCssBlock("::selection");

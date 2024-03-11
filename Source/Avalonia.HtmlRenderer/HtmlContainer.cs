@@ -270,6 +270,24 @@ namespace TheArtOfDev.HtmlRenderer.Avalonia
         {
             HtmlContainerInt.ClearSelection();
         }
+        
+        /// <summary>
+        /// the text fore color use for selected text
+        /// </summary>
+        internal RColor SelectionForeColor
+        {
+            get { return _htmlContainerInt.SelectionForeColor; }
+            set { _htmlContainerInt.SelectionForeColor = value; }
+        }
+
+        /// <summary>
+        /// the back-color to use for selected text
+        /// </summary>
+        internal RColor SelectionBackColor
+        {
+            get { return _htmlContainerInt.SelectionBackColor; }
+            set { _htmlContainerInt.SelectionBackColor = value; }
+        }
 
         /// <summary>
         /// Init with optional document and stylesheet.
